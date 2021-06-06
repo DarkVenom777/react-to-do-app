@@ -6,10 +6,13 @@ const AddTask=({onAdd})=>{
     event.preventDefault()
     if(!text){
       alert("Task must be added")
+      return
     }
+    else{
     onAdd({text,day})
     setText('')
-    setDay('')
+      setDay('')
+    }
 
   }
     return (
@@ -19,17 +22,17 @@ const AddTask=({onAdd})=>{
         <div className='form-control'>
 
         <label class='block text-indigo-700 text-m font-bold mb-2'>
-          Add Task </label>
+          Task </label>
         <input class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
                type='text' value={text} onChange={(e)=>
-          setText(e.target.value)} placeholder='Task'/>
+          setText(e.target.value)} placeholder='Input Task'/>
         </div>
           <div className='form-control'>
         <label class='block text-indigo-700 text-m font-bold mb-2'>
           Time  </label>
         <input class='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
                type='text' value={day}  onChange={(e)=>
-          setDay(e.target.value)}  placeholder='Add Time'/>
+          setDay(e.target.value)}  placeholder='Input Time'/>
         </div>
           <input class='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline'
                  type='submit' value='Add'/>
