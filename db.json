@@ -1,19 +1,10 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "text": "Eat",
-      "day": "Now"
-    },
-    {
-      "id": 2,
-      "text": "Sleep",
-      "day": "Tonight"
-    },
-    {
-      "text": "Repeat",
-      "day": "Everyday",
-      "id": 6
+      "text": "4545",
+      "day": "2212-12-05",
+      "time": "14:12",
+      "id": 1
     }
   ]
 }
